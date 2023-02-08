@@ -1,0 +1,96 @@
+// Create Users
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Yusuf",
+    "email": "yusuf@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+// Get All USers
+GET http://localhost:5000/users
+
+###
+// Get Single Users
+GET http://localhost:5000/users/cc2d219d-4804-4572-8fef-a77ce91f4b09
+
+###
+// Update Users
+PATCH http://localhost:5000/users/cc2d219d-4804-4572-8fef-a77ce91f4b09
+Content-Type: application/json
+
+{
+    "name": "Admin Update",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+/// Delete Users
+DELETE http://localhost:5000/users/c9ec1602-7f76-4c08-bed0-bd3633eed446
+
+###
+// Login Admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+// Login Users
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "yusuf@gmail.com",
+    "password": "123456"
+}
+
+###
+// Me
+GET http://localhost:5000/me
+
+###
+// Logout User
+DELETE http://localhost:5000/logout
+
+###
+// Get All Products
+GET http://localhost:5000/products
+
+###
+// Get Single Products
+GET http://localhost:5000/products/bdb0868e-d929-4333-8768-3965495f916c
+
+###
+// Create Data Produk
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 6",
+    "price": 369
+}
+
+###
+// Update Product
+PATCH http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product Update",
+    "price": 111
+}
+
+###
+/// Delete Products
+DELETE http://localhost:5000/products/f77929dd-2cbe-4ad2-8775-b17a805bcbf4
